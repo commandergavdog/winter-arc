@@ -50,7 +50,9 @@
 }
 
 * { box-sizing: border-box; }
-body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased;
+  /* Reserve the status-bar area so the sticky header (offset by the same inset) doesn't overlap the page below it. */
+  padding-top: env(safe-area-inset-top, 0px); }
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
 h1, h2, h3 { text-wrap: balance; margin: 0; }
 p { margin: 0; }

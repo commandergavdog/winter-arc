@@ -1,6 +1,6 @@
 // Offline support. App files: network first, cached copy when offline.
 // Firebase SDK and fonts: versioned URLs, so cache first.
-const CACHE = "winter-arc-6e9ff4ce91";
+const CACHE = "winter-arc-83596601b3";
 const SHELL = ["./", "./index.html", "./plan.json", "./firebase.js", "./firebase-config.js", "./manifest.webmanifest",
   "./icons/icon.svg", "./icons/apple-touch-icon.png", "./icons/icon-192.png"];
 const IMMUTABLE_HOSTS = ["www.gstatic.com", "fonts.googleapis.com", "fonts.gstatic.com"];
